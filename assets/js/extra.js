@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const btnModel = document.getElementById('btnModel');
     const btnExterior = document.getElementById('btnExterior');
     const btnInterior = document.getElementById('btnInterior');
+    const btnVideo = document.getElementById('btnVideo');
     const btnLumion = document.getElementById('btnLumion');
     const btnVray = document.getElementById('btnVray');
     const galeria = document.getElementById('galeria');
@@ -35,6 +36,11 @@ document.addEventListener('DOMContentLoaded', function () {
     btnInterior.addEventListener('click', function () {
         ocultarElementos();
         filtrarPorPropiedad('render', 'interior');
+    });
+
+    btnVideo.addEventListener('click', function () {
+        ocultarElementos();
+        filtrarPorPropiedad('type', 'video');
     });
 
     btnLumion.addEventListener('click', function () {

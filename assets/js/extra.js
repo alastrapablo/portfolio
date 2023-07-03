@@ -120,67 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-function filtrarPorPropiedad(propiedad, valor) {
-    const overlayElement = document.createElement('div');
-    overlayElement.className = 'overlay';
-    document.body.appendChild(overlayElement);
 
-    // Forzar un reflow (repintado) para que la transición se aplique desde el principio
-    void overlayElement.offsetWidth;
-
-    // Agregar la clase .active para mostrar el overlay con transición
-    overlayElement.classList.add('active');
-
-    // Mostrar el loader mientras se realiza la búsqueda
-    const loaderElement = document.createElement('div');
-    loaderElement.className = 'loader';
-    document.body.appendChild(loaderElement);
-
-    // Retrasar la búsqueda por 2 segundos
-    setTimeout(function () {
-        galeria.innerHTML = '';
-
-        imagenes.forEach(function (imagen) {
-            if (imagen[propiedad] === valor || (imagen.type === 'video' && valor === 'video')) {
-                const spanElement = document.createElement('span');
-                spanElement.className = 'image main lamina';
-
-                if (imagen.type === 'video') {
-                    if (imagen.src.includes('.mp4')) {
-                        const videoElement = document.createElement('video');
-                        videoElement.src = imagen.src;
-                        videoElement.controls = true;
-                        spanElement.appendChild(videoElement);
-                    } else if (imagen.src.includes('youtube.com')) {
-                        const iframeElement = document.createElement('iframe');
-                        iframeElement.src = imagen.src;
-                        iframeElement.frameborder = '0';
-                        iframeElement.allowfullscreen = true;
-                        spanElement.appendChild(iframeElement);
-                    }
-                } else {
-                    const imgElement = document.createElement('img');
-                    imgElement.src = imagen.src;
-                    imgElement.alt = '';
-                    spanElement.appendChild(imgElement);
-                }
-
-                galeria.appendChild(spanElement);
-            }
-        });
-
-        // Eliminar el loader y el overlay después de mostrar los resultados
-        document.body.removeChild(loaderElement);
-
-        // Quitar la clase .active para ocultar el overlay con transición
-        overlayElement.classList.remove('active');
-
-        // Eliminar el overlay después de la transición de salida
-        overlayElement.addEventListener('transitionend', function () {
-            document.body.removeChild(overlayElement);
-        });
-    }, 2000);
-}
 
 
 

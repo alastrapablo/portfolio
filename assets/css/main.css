@@ -4147,3 +4147,28 @@ body {
 	width: 100%;
 	height: 100%;
 }
+
+.memoria {
+	display: flex;
+	text-size-adjust: .2zem;
+}
+
+.memoria-text {
+	flex: 2.5;
+	text-align: justify;
+}
+
+.memoria-about {
+	flex: 1;
+	padding-left: 2em;
+}
+
+@media (max-width: 600px) {
+	.memoria {
+		flex-direction: column;
+	}
+
+	.memoria-about {
+		order: -1;
+	}
+}

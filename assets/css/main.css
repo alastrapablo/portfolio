@@ -3953,11 +3953,12 @@ body.is-menu-visible #menu .close {
 	}
 
 	.btnInicioContainer {
-		margin-top: 50%;
+		margin-top: 2em;
 	}
 
 	.btnInicio {
-		margin-bottom: 1em;
+		display: inline-block;
+		margin-bottom: .2em;
 		min-width: 40px;
 		height: 40px;
 		display: block;

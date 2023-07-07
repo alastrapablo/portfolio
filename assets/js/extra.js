@@ -120,10 +120,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
-
-
-
 //* Btn Scroll to Top
 
 // Mostrar u ocultar el botón según el desplazamiento

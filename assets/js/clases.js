@@ -38,6 +38,11 @@ const imagenes = [
     new Imagen("../images/proyects/Polideportivo/P2 - Polideportivo.jpg", "Polideportivo", "plan", true, false, "autocad", 2),
     new Imagen("../images/proyects/Polideportivo/P3 - Polideportivo.jpg", "Polideportivo", "plan", true, false, "autocad", 3),
     new Imagen("../images/proyects/Polideportivo/P4 - Polideportivo.jpg", "Polideportivo", "plan", true, false, "autocad", 4),
+    new Imagen("../images/proyects/Polideportivo/P5 - Polideportivo.jpg", "Polideportivo", "plan", true, false, "autocad", 5),
+    new Imagen("../images/proyects/Polideportivo/P6 - Polideportivo.jpg", "Polideportivo", "plan", true, false, "autocad", 6),
+    new Imagen("../images/proyects/Polideportivo/P7 - Polideportivo.jpg", "Polideportivo", "plan", true, false, "autocad", 7),
+    new Imagen("../images/proyects/Polideportivo/P8 - Polideportivo.jpg", "Polideportivo", "plan", true, false, "autocad", 8),
+    new Imagen("../images/proyects/Polideportivo/P9 - Polideportivo.jpg", "Polideportivo", "plan", true, false, "autocad", 9),
     //BHC
     new Imagen("../images/proyects/Biblioteca/0 - Biblioteca.jpg", "BHC", "model", false, false, "v-ray", 0),
     new Imagen("../images/proyects/Biblioteca/1 - Biblioteca.jpg", "BHC", "render", false, "exterior", "lumion", 1),

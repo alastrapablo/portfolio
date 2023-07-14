@@ -93,6 +93,7 @@ video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-decoration: none !important;
 }
 
 article,
@@ -3719,6 +3720,7 @@ body.is-menu-visible #menu .close {
 	border: none;
 	background: none;
 	text-transform: uppercase;
+	text-decoration: none !important;
 	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
 	transition-duration: 400ms;
 	transition-property: color;
@@ -4170,27 +4172,85 @@ body {
 
 /* memoria */
 
-.memoria {
-	display: flex;
-	text-size-adjust: .2zem;
+.columna {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	z-index: 2;
 }
 
-.memoria-text {
-	flex: 2.5;
+.columna-izquierda {
+	left: 0;
+	width: 66.66%;
+}
+
+.columna-derecha {
+	right: 0;
+	width: 33.33%;
+}
+
+.memoria {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 3em;
+	z-index: 2;
+}
+
+.memoria p {
 	text-align: justify;
+	text-align-last: justify;
+	margin: 1em;
+	transform: translateX(3.8%);
+}
+
+.memoria-scroll {
+	height: 100%;
+	overflow-y: auto;
 }
 
 .memoria-about {
-	flex: 1;
-	padding-left: 2em;
+	position: absolute;
+	top: 1em;
+	left: 2em;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 20px;
+	z-index: 2;
 }
 
-@media (max-width: 600px) {
+.memoria-about h5 {
+	margin: 0 0 .5em 0;
+}
+
+@media (max-width: 768px) {
+
 	.memoria {
-		flex-direction: column;
+		padding: 1em;
 	}
 
 	.memoria-about {
-		order: -1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(255, 255, 255, 0.5);
+		padding: 20px;
+		z-index: 2;
+	}
+
+	.memoria-about h3 {
+		font-size: .7em;
+	}
+
+	.memoria-about h5,
+	p {
+		font-size: .6em;
+	}
+
+	.memoria-about button {
+		font-size: .3em;
+
 	}
 }
+
+/* vertical scroll */

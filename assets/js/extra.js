@@ -129,6 +129,19 @@ function toggleDropdown() {
     contentDiv.style.marginTop = dropdownContent.style.display === "block" ? dropdownContent.offsetHeight + "px" : "0";
 }
 
+
+//* Btn Memoria
+function toggleDropdownM() {
+    var hiddenContent = document.querySelector(".memoria-scroll");
+
+    if (hiddenContent.style.display === "none") {
+        hiddenContent.style.display = "block";
+    } else {
+        hiddenContent.style.display = "none";
+    }
+}
+
+
 //* Btn Scroll to Top
 
 // Mostrar u ocultar el botón según el desplazamiento

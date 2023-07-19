@@ -4240,11 +4240,18 @@ body {
 
 	.memoria-about h3 {
 		font-size: .7em;
+		margin-bottom: 1em;
 	}
 
-	.memoria-about h5,
-	p {
-		font-size: .6em;
+	.memoria-about h5 {
+		font-size: .55em;
+		margin: .1em;
+	}
+
+	.memoria-about p {
+		font-size: .55em;
+		margin-top: .1em;
+		margin-bottom: .5em;
 	}
 
 	.memoria-about button {

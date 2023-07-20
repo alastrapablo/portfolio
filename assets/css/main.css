@@ -4229,6 +4229,10 @@ body {
 		padding: 1em;
 	}
 
+	.memoria p {
+		font-size: .55em;
+	}
+
 	.memoria-about {
 		position: absolute;
 		top: 0;

@@ -76,6 +76,17 @@ const imagenes = [
     new Imagen("../images/proyects/Oficinas/P4 - Oficinas.jpg", "Oficinas", "plan", true, false, "autocad", 4),
     new Imagen("../images/proyects/Oficinas/P5 - Oficinas.jpg", "Oficinas", "plan", true, false, "autocad", 5),
     new Imagen("../images/proyects/Oficinas/P6 - Oficinas.jpg", "Oficinas", "plan", true, false, "autocad", 6),
+
+    //Estación de Transferencia
+    new Imagen("../images/proyects/Estación - A2/1 - Estación.jpg", "Estación", "render", false, "exterior", "lumion", 1),
+    new Imagen("../images/proyects/Estación - A2/2 - Estación.jpg", "Estación", "render", false, "exterior", "lumion", 2),
+    new Imagen("../images/proyects/Estación - A2/3 - Estación.jpg", "Estación", "render", false, "exterior", "lumion", 3),
+    new Imagen("../images/proyects/Estación - A2/4 - Estación.jpg", "Estación", "render", false, "exterior", "lumion", 4),
+    new Imagen("../images/proyects/Estación - A2/5 - Estación.jpg", "Estación", "render", false, "exterior", "lumion", 5),
+    new Imagen("../images/proyects/Estación - A2/6 - Estación.jpg", "Estación", "render", false, "exterior", "lumion", 6),
+    new Imagen("../images/proyects/Estación - A2/7 - Estación.jpg", "Estación", "render", false, "exterior", "lumion", 7),
+    new Imagen("../images/proyects/Estación - A2/8 - Estación.jpg", "Estación", "render", false, "exterior", "lumion", 8),
+
     //Antifunicular
     // new Imagen("../images/proyects/Estructura E3/0 - Estructura E3.jpg", "Antifunicular", "model", false, false, "v-ray", 0),
     new Imagen("../images/proyects/Estructura E3/1 - Estructura E3.jpg", "Antifunicular", "render", false, "exterior", "lumion", 1),
